@@ -89,7 +89,7 @@ def create_json(pokemon_list, res_file_name="output.json"):
         pokemon_json[name] = filtered_pokemon_info
 
     with open(res_file_name, 'w') as result_file:
-        json.dump(pokemon_json, result_file, indent=4)
+        json.dump(pokemon_json, result_file, indent=2)
     
     print(f"Created output json: {res_file_name}")
     return pokemon_json
@@ -98,6 +98,7 @@ def main():
     if len(sys.argv) < 2:
         print("Usage: python task-a.py <input_filename> <output_filename>")
         print("Example: python task-a.py pokemon_data.json")
+        return None;
     
     input_filename = sys.argv[1]
     output_filename = sys.argv[2]
