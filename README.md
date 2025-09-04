@@ -2,5 +2,6 @@
 Task for the CC Backend Vertical
 
 Dependencies:
-- requests
+- requests : https://pypi.org/project/requests/ {`pip install requests`}
+- prettytable : https://pypi.org/project/prettytable/ {'pip install prettytable'}
 
